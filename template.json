@@ -3,6 +3,7 @@
   "name": "Estudio de yoga y pilates",
   "version": "1.0.0",
   "category": "belleza-bienestar",
+  "uses": ["reservaciones", "inscripciones"],
   "style": "Atardecer en la bahía: ciruela profundo, arena y durazno, fotos a todo lo ancho y mucho aire; títulos en Marcellus y texto en Work Sans.",
   "description": "Para estudios de yoga, pilates reformer y meditación: dos caminos para elegir práctica, horario semanal filtrable por disciplina y nivel, paquetes de clases, clase de prueba y retiro con cuenta regresiva.",
   "tags": [
