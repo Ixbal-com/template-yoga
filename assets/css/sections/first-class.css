@@ -1,0 +1,67 @@
+/* Primera vez: invitación con foto a un lado y formulario de reserva al otro. */
+.first {
+  display: grid;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+@media (min-width: 56rem) {
+  .first {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-16);
+  }
+}
+
+.first__photo {
+  margin-top: var(--space-8);
+  border-radius: var(--radius-lg);
+}
+
+.first__bring {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-6);
+  padding: 0;
+  list-style: none;
+  color: var(--color-text-muted);
+}
+
+.first__bring li::before {
+  content: "\25CB  ";
+  color: var(--color-accent-hover);
+}
+
+.first__form {
+  padding: clamp(var(--space-6), 4vw, var(--space-12));
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 56rem) {
+  .first__form {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-6));
+  }
+}
+
+.first__form-title {
+  font-size: var(--text-xl);
+}
+
+.first__level {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.first__level label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-right: var(--space-4);
+}
+
+.first__level input {
+  accent-color: var(--color-primary);
+}

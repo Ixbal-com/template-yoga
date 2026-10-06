@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#4a2c40"/>
+  <circle cx="950" cy="300" r="170" fill="#e0915a"/>
+  <rect x="0" y="380" width="1200" height="250" fill="#3a2132"/>
+  <path d="M0 380h1200" stroke="#f8e3d3" stroke-width="3"/>
+  <text x="90" y="210" fill="#fdf8f3" font-family="Georgia, serif" font-size="96">Estudio Raíz</text>
+  <text x="94" y="280" fill="#f8e3d3" font-family="system-ui, sans-serif" font-size="34" letter-spacing="6">YOGA · PILATES REFORMER · MEDITACIÓN</text>
+  <text x="94" y="500" fill="#fdf8f3" font-family="Georgia, serif" font-size="56">Respira. Muévete. Vuelve a ti.</text>
+  <text x="94" y="565" fill="#e0915a" font-family="system-ui, sans-serif" font-size="30">Puerto Vallarta · Clase de prueba $150</text>
+</svg>

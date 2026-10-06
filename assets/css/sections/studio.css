@@ -1,0 +1,35 @@
+/* Mosaico del estudio: una foto alta, dos cuadradas y una panorámica. */
+.studio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.studio .media {
+  border-radius: var(--radius-lg);
+}
+
+.studio__main {
+  grid-column: 1 / -1;
+}
+
+.studio__wide {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 48rem) {
+  .studio {
+    grid-template-columns: 1.1fr 1fr 1fr;
+  }
+
+  .studio__main {
+    --media-ratio: auto;
+    grid-column: 1;
+    grid-row: span 2;
+    height: 100%;
+  }
+
+  .studio__wide {
+    grid-column: 2 / -1;
+  }
+}

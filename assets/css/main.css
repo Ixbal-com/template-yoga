@@ -1,0 +1,32 @@
+/*
+ * Punto de entrada de estilos. El orden de las capas define la prioridad:
+ * una regla en "sections" gana sobre "components" sin importar su especificidad.
+ * Para agregar un archivo nuevo, impórtalo aquí en la capa que le corresponde.
+ */
+@layer tokens, base, layout, components, sections, utilities;
+
+@import url("tokens.css") layer(tokens);
+@import url("base.css") layer(base);
+@import url("layout.css") layer(layout);
+
+@import url("components/button.css") layer(components);
+@import url("components/card.css") layer(components);
+@import url("components/media.css") layer(components);
+@import url("components/form.css") layer(components);
+@import url("components/tabs.css") layer(components);
+@import url("components/header.css") layer(components);
+@import url("components/footer.css") layer(components);
+@import url("components/whatsapp-float.css") layer(components);
+
+@import url("sections/hero.css") layer(sections);
+@import url("sections/paths.css") layer(sections);
+@import url("sections/first-class.css") layer(sections);
+@import url("sections/schedule.css") layer(sections);
+@import url("sections/packages.css") layer(sections);
+@import url("sections/teachers.css") layer(sections);
+@import url("sections/retreat.css") layer(sections);
+@import url("sections/studio.css") layer(sections);
+@import url("sections/quotes.css") layer(sections);
+@import url("sections/visit.css") layer(sections);
+
+@import url("utilities.css") layer(utilities);

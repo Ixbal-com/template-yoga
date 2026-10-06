@@ -1,0 +1,79 @@
+/* Hero a todo lo ancho: la foto ocupa la pantalla y el texto va encima con un velo. */
+.hero {
+  position: relative;
+  display: grid;
+  min-height: min(88vh, 52rem);
+  color: var(--color-on-primary);
+}
+
+.hero__photo,
+.hero__overlay {
+  grid-area: 1 / 1;
+}
+
+.hero__photo {
+  --media-ratio: auto;
+  height: 100%;
+  border-radius: 0;
+}
+
+/* Posicionado para quedar encima de la foto (.media también lo está) */
+.hero__overlay {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-block: var(--space-16);
+  background: linear-gradient(180deg, transparent 30%, var(--color-scrim));
+}
+
+.hero__content {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-6);
+}
+
+.hero__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  max-width: 14ch;
+  font-size: var(--text-3xl);
+}
+
+.hero__title em {
+  display: block;
+  font-style: normal;
+  color: var(--color-accent-soft);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* "Abierto": lo muestra opening-hours.js según la tabla de #visitanos */
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-on-primary-muted);
+}
+
+.status-badge::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--color-danger);
+}
+
+.status-badge.is-open::before {
+  background: var(--color-whatsapp);
+}

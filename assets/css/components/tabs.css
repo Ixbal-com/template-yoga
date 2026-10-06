@@ -1,0 +1,27 @@
+/* Pestañas tipo píldora. Estilo inicial de la biblioteca: cada plantilla lo ajusta a su identidad. */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.tabs__tab {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tabs__tab:hover {
+  border-color: var(--color-primary);
+}
+
+.tabs__tab[aria-selected="true"] {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}

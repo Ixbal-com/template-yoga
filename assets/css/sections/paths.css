@@ -1,0 +1,59 @@
+/* Dos caminos: yoga y reformer lado a lado, con fotos en arco. */
+.paths {
+  display: grid;
+  gap: var(--space-12);
+}
+
+@media (min-width: 48rem) {
+  .paths {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .path:nth-child(2) {
+    margin-top: var(--space-16);
+  }
+}
+
+.path .media {
+  border-radius: var(--radius-arch);
+}
+
+.path__body {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-6);
+}
+
+.path__title {
+  font-size: var(--text-xl);
+}
+
+.path__body p {
+  color: var(--color-text-muted);
+}
+
+.path__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.path__tags li {
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+}
+
+.path__link {
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.path__link:hover {
+  color: var(--color-accent-hover);
+}
