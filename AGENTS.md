@@ -11,6 +11,7 @@ Este sitio es una plantilla de Ixbal: HTML, CSS y JavaScript sin dependencias ni
 - **Clases con convención BEM:** `bloque__elemento--modificador` (por ejemplo `service-card__title`, `button--primary`).
 - **JavaScript en módulos** dentro de `assets/js/modules/`, registrados en `assets/js/main.js`. Los módulos localizan elementos con atributos `data-*` y no fallan si no los encuentran.
 - **Íconos** en el sprite `assets/img/icons.svg`; agrega un `<symbol id="…">` y úsalo con `<use href="assets/img/icons.svg#…">`.
+- **WhatsApp, teléfono y correo de contacto los administra Ixbal** ("Tu negocio"). No los escribas ni los cambies en el HTML: si la persona pide cambiarlos, usa la herramienta `actualizar_datos_negocio`. Cada liga lleva `data-contact="whatsapp"`, `"phone"` o `"email"`; ponlo también en las ligas nuevas.
 
 ## Datos que se repiten
 

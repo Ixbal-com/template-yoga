@@ -74,11 +74,12 @@ function checkHtmlBasics(file, html) {
   }
 }
 
-// El número de WhatsApp y el teléfono aparecen en varios lugares; todos deben coincidir.
+// WhatsApp, teléfono y correo aparecen en varios lugares; todos deben coincidir.
 function checkContactConsistency(file, html) {
   for (const [kind, pattern] of [
     ["whatsapp", /href="https:\/\/wa\.me\/(\d+)[^"]*"[^>]*data-contact="whatsapp"/g],
     ["phone", /href="tel:([^"]+)"[^>]*data-contact="phone"/g],
+    ["email", /href="mailto:([^"?]+)[^"]*"[^>]*data-contact="email"/g],
   ]) {
     const values = new Set([...html.matchAll(pattern)].map(([, value]) => value));
     if (values.size > 1) errors.push(`${file}: hay ${kind} distintos (${[...values].join(", ")}).`);
